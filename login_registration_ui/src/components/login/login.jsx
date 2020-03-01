@@ -8,7 +8,8 @@ export class Login extends React.Component {
     }
 
     render() {
-        return <div className="base-container">
+        return (
+         <div className="base-container">
             <div className="header">Login</div>
             <div className="content">
                 <div className="image">
@@ -18,12 +19,12 @@ export class Login extends React.Component {
                 <div className="form">
                     <div className="form-group">
                         <label htmlFor="username">Username</label>
-                        <label type="text" name="username" placeholder="username"></label>
+                        <input type="text" name="username" placeholder="username" />
 
                     </div>
                     <div className="form-group">
                         <label htmlFor="password">Password</label>
-                        <label type="password" name="password" placeholder="password"></label>
+                        <input type="password" name="password" placeholder="password" />
                         
                     </div>
                 </div>
@@ -36,5 +37,7 @@ export class Login extends React.Component {
             </div>
 
         </div>
+        )
     }
+    
 }
